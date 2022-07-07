@@ -1,0 +1,3 @@
+MODULE test1
+SUBMODULE mem_afisor_anod
+INSTANCE UUT

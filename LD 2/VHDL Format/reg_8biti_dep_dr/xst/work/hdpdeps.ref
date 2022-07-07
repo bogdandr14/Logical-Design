@@ -1,0 +1,7 @@
+V3 3
+FL $XILINX/reg_8biti_dep_dr/reg_8biti_dep_dr.vhd 2019/05/20.15:28:08 J.40
+EN work/reg_8biti_dep_dr 1558355301 \
+      FL $XILINX/reg_8biti_dep_dr/reg_8biti_dep_dr.vhd PB ieee/std_logic_1164 1192821031 \
+      PB ieee/std_logic_arith 1192821032 PB ieee/STD_LOGIC_UNSIGNED 1192821033
+AR work/reg_8biti_dep_dr/Behavioral 1558355302 \
+      FL $XILINX/reg_8biti_dep_dr/reg_8biti_dep_dr.vhd EN work/reg_8biti_dep_dr 1558355301

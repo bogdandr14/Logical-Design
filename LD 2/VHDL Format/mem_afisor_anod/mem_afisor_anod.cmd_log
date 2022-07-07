@@ -1,0 +1,5 @@
+xst -ise "C:/Xilinx92i/mem_afisor_anod/mem_afisor_anod.ise" -intstyle ise -ifn mem_afisor_anod.xst -ofn mem_afisor_anod.syr
+ngdbuild -ise "C:/Xilinx92i/mem_afisor_anod/mem_afisor_anod.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xa3s50-vqg100-4 "mem_afisor_anod.ngc" mem_afisor_anod.ngd
+map -ise "C:/Xilinx92i/mem_afisor_anod/mem_afisor_anod.ise" -intstyle ise -p xa3s50-vqg100-4 -cm area -pr b -k 4 -c 100 -o mem_afisor_anod_map.ncd mem_afisor_anod.ngd mem_afisor_anod.pcf
+par -ise "C:/Xilinx92i/mem_afisor_anod/mem_afisor_anod.ise" -w -intstyle ise -ol std -t 1 mem_afisor_anod_map.ncd mem_afisor_anod.ncd mem_afisor_anod.pcf
+trce -ise "C:/Xilinx92i/mem_afisor_anod/mem_afisor_anod.ise" -intstyle ise -e 3 -s 4 -xml mem_afisor_anod mem_afisor_anod.ncd -o mem_afisor_anod.twr mem_afisor_anod.pcf

@@ -1,0 +1,1 @@
+xst -ise "E:/Facultate/1.2/Proiectare Logica/Lab/bilet_19/bilet_19.ise" -intstyle ise -ifn bilet_19.xst -ofn bilet_19.syr

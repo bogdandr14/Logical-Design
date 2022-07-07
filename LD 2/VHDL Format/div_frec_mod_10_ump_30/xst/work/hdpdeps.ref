@@ -1,0 +1,9 @@
+V3 3
+FL "E:/Facultate/1.2/Proiectare Logica/Lab/div_frec_mod_10_ump_30/div_frec_mod_10_ump_30.vhd" 2019/05/20.21:27:27 J.40
+EN work/div_frec_mod_10_ump_30 1558376858 \
+      FL "E:/Facultate/1.2/Proiectare Logica/Lab/div_frec_mod_10_ump_30/div_frec_mod_10_ump_30.vhd" \
+      PB ieee/std_logic_1164 1192821031 PB ieee/std_logic_arith 1192821032 \
+      PB ieee/STD_LOGIC_UNSIGNED 1192821033
+AR work/div_frec_mod_10_ump_30/Behavioral 1558376859 \
+      FL "E:/Facultate/1.2/Proiectare Logica/Lab/div_frec_mod_10_ump_30/div_frec_mod_10_ump_30.vhd" \
+      EN work/div_frec_mod_10_ump_30 1558376858

@@ -1,0 +1,337 @@
+Release 9.2.04i - xst J.40
+Copyright (c) 1995-2007 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to ./xst/projnav.tmp
+CPU : 0.00 / 0.07 s | Elapsed : 0.00 / 1.00 s
+ 
+--> Parameter xsthdpdir set to ./xst
+CPU : 0.00 / 0.07 s | Elapsed : 0.00 / 1.00 s
+ 
+--> Reading design: div_frecv_mod_1000.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+     9.1) Device utilization summary
+     9.2) Partition Resource Summary
+     9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "div_frecv_mod_1000.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "div_frecv_mod_1000"
+Output Format                      : NGC
+Target Device                      : xa3s50-4-vqg100
+
+---- Source Options
+Top Module Name                    : div_frecv_mod_1000
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : lut
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : YES
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Library Search Order               : div_frecv_mod_1000.lso
+Keep Hierarchy                     : NO
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "E:/Facultate/1.2/Proiectare Logica/Lab/div_frecv_mod_1000/div_frecv_mod_1000.vhd" in Library work.
+Architecture behavioral of Entity div_frecv_mod_1000 is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <div_frecv_mod_1000> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <div_frecv_mod_1000> in library <work> (Architecture <behavioral>).
+Entity <div_frecv_mod_1000> analyzed. Unit <div_frecv_mod_1000> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <div_frecv_mod_1000>.
+    Related source file is "E:/Facultate/1.2/Proiectare Logica/Lab/div_frecv_mod_1000/div_frecv_mod_1000.vhd".
+WARNING:Xst:2734 - Property "use_dsp48" is not applicable for this technology.
+    Found 10-bit register for signal <saStarePrezenta>.
+    Found 10-bit adder for signal <saStareUrmatoare$addsub0000> created at line 39.
+    Summary:
+	inferred  10 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <div_frecv_mod_1000> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 10-bit adder                                          : 1
+# Registers                                            : 1
+ 10-bit register                                       : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Loading device for application Rf_Device from file '3s50.nph' in environment C:\Xilinx92i.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 10-bit adder                                          : 1
+# Registers                                            : 10
+ Flip-Flops                                            : 10
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <div_frecv_mod_1000> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block div_frecv_mod_1000, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 10
+ Flip-Flops                                            : 10
+
+=========================================================================
+
+=========================================================================
+*                          Partition Report                             *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : div_frecv_mod_1000.ngr
+Top Level Output File Name         : div_frecv_mod_1000
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : NO
+
+Design Statistics
+# IOs                              : 3
+
+Cell Usage :
+# BELS                             : 18
+#      INV                         : 1
+#      LUT2                        : 1
+#      LUT2_L                      : 3
+#      LUT3                        : 3
+#      LUT4                        : 8
+#      LUT4_D                      : 1
+#      LUT4_L                      : 1
+# FlipFlops/Latches                : 10
+#      FDC                         : 10
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 2
+#      IBUF                        : 1
+#      OBUF                        : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : xa3s50vqg100-4 
+
+ Number of Slices:                       9  out of    768     1%  
+ Number of Slice Flip Flops:            10  out of   1536     0%  
+ Number of 4 input LUTs:                18  out of   1536     1%  
+ Number of IOs:                          3
+ Number of bonded IOBs:                  3  out of     63     4%  
+ Number of GCLKs:                        1  out of      8    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+iClk                               | BUFGP                  | 10    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+iReset                             | IBUF                   | 10    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 5.814ns (Maximum Frequency: 171.999MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 10.636ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'iClk'
+  Clock period: 5.814ns (frequency: 171.999MHz)
+  Total number of paths / destination ports: 125 / 10
+-------------------------------------------------------------------------
+Delay:               5.814ns (Levels of Logic = 3)
+  Source:            saStarePrezenta_1 (FF)
+  Destination:       saStarePrezenta_4 (FF)
+  Source Clock:      iClk rising
+  Destination Clock: iClk rising
+
+  Data Path: saStarePrezenta_1 to saStarePrezenta_4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              5   0.720   1.260  saStarePrezenta_1 (saStarePrezenta_1)
+     LUT4:I0->O            1   0.551   0.827  oCY_cmp_eq000016 (oCY_cmp_eq0000_map8)
+     LUT4:I3->O            8   0.551   1.151  oCY_cmp_eq000024 (oCY_OBUF)
+     LUT3:I2->O            1   0.551   0.000  saStareUrmatoare<7>1 (saStareUrmatoare<7>)
+     FDC:D                     0.203          saStarePrezenta_7
+    ----------------------------------------
+    Total                      5.814ns (2.576ns logic, 3.238ns route)
+                                       (44.3% logic, 55.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'iClk'
+  Total number of paths / destination ports: 10 / 1
+-------------------------------------------------------------------------
+Offset:              10.636ns (Levels of Logic = 3)
+  Source:            saStarePrezenta_1 (FF)
+  Destination:       oCY (PAD)
+  Source Clock:      iClk rising
+
+  Data Path: saStarePrezenta_1 to oCY
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              5   0.720   1.260  saStarePrezenta_1 (saStarePrezenta_1)
+     LUT4:I0->O            1   0.551   0.827  oCY_cmp_eq000016 (oCY_cmp_eq0000_map8)
+     LUT4:I3->O            8   0.551   1.083  oCY_cmp_eq000024 (oCY_OBUF)
+     OBUF:I->O                 5.644          oCY_OBUF (oCY)
+    ----------------------------------------
+    Total                     10.636ns (7.466ns logic, 3.170ns route)
+                                       (70.2% logic, 29.8% route)
+
+=========================================================================
+CPU : 1.71 / 1.78 s | Elapsed : 1.00 / 2.00 s
+ 
+--> 
+
+Total memory usage is 163764 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

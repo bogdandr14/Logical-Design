@@ -1,0 +1,2 @@
+xst -ise "E:/Facultate/1.2/Proiectare Logica/Lab/intercon_div_frec/intercon_div_frec.ise" -intstyle ise -ifn intercon_div_frec.xst -ofn intercon_div_frec.syr
+netgen -ise "E:/Facultate/1.2/Proiectare Logica/Lab/intercon_div_frec/intercon_div_frec.ise" -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim intercon_div_frec.ngc intercon_div_frec_synthesis.v

@@ -1,0 +1,18 @@
+entity div_frecv_mod_1000 is
+    Port ( iClk : in  STD_LOGIC;
+           iReset : in  STD_LOGIC;
+           oCY : out  STD_LOGIC);
+end div_frecv_mod_1000;
+
+architecture Behavioral of div_frecv_mod_1000 is
+	signal saStarePrezenta, saStareUrmatoare: STD_LOGIC_VECTOR (9 downto 0);
+begin
+	saStareUrmatoare <= "0000000000" when saStarePrezenta="1111100111" else
+							saStarePrezenta+1;
+	saStarePrezenta <= "0000000000" when iReset='1' else
+							saStareUrmatoare when rising_edge(iClk);
+	oCY<='1' when saStarePrezenta="1111100111" else
+			'0';
+
+end Behavioral;
+

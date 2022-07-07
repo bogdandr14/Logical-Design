@@ -1,0 +1,9 @@
+V3 3
+FL "E:/Facultate/1.2/Proiectare Logica/Lab/rec_sec_din_mealy)/diag_asm/bilet_1/bilet_1.vhd" 2019/05/21.21:24:49 J.40
+EN work/bilet_1 1558463132 \
+      FL "E:/Facultate/1.2/Proiectare Logica/Lab/rec_sec_din_mealy)/diag_asm/bilet_1/bilet_1.vhd" \
+      PB ieee/std_logic_1164 1192821031 PB ieee/std_logic_arith 1192821032 \
+      PB ieee/STD_LOGIC_UNSIGNED 1192821033
+AR work/bilet_1/Behavioral 1558463133 \
+      FL "E:/Facultate/1.2/Proiectare Logica/Lab/rec_sec_din_mealy)/diag_asm/bilet_1/bilet_1.vhd" \
+      EN work/bilet_1 1558463132

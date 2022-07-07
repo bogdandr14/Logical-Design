@@ -1,0 +1,16 @@
+entity reg_2_regimuri is
+    Port ( iClk : in  STD_LOGIC;--semnal tact
+           iSDD : in  STD_LOGIC;-- intrare serie deplasare dreapta
+           iSRL : in  STD_LOGIC;-- intrare selectie regim lucru: 0 deplasare dreapta, 1 incarcare paralel
+           iaD : in  STD_LOGIC_VECTOR (7 downto 0);--intrare paralela
+           oaQ : out  STD_LOGIC_VECTOR (7 downto 0));
+end reg_2_regimuri;
+
+architecture Behavioral of reg_2_regimuri is
+	signal saD, saQ : STD_LOGIC_VECTOR (7 downto 0);
+begin
+	saD <= iaD when iSRL = '1' else
+			iSDD&saQ(7 downto 1);
+	saQ <= saD when rising_edge(iClk);
+	oaQ <= saQ;
+end Behavioral;

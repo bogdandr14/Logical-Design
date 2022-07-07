@@ -1,0 +1,2 @@
+xst -ise "C:/Xilinx92i/reg_2_regimuri/reg_2_regimuri.ise" -intstyle ise -ifn reg_2_regimuri.xst -ofn reg_2_regimuri.syr
+netgen -ise "C:/Xilinx92i/reg_2_regimuri/reg_2_regimuri.ise" -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim reg_2_regimuri.ngc reg_2_regimuri_synthesis.v

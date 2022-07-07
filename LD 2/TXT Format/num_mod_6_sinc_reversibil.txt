@@ -1,0 +1,18 @@
+entity num_mod_6_sinc_reversibil is
+    Port ( iClk : in  STD_LOGIC;
+           iClear : in  STD_LOGIC;
+           iSens : in  STD_LOGIC;--0 numarare directa, 1 numarare inversa
+           oaQ : out  STD_LOGIC_VECTOR (2 downto 0));
+end num_mod_6_sinc_reversibil;
+
+architecture Behavioral of num_mod_6_sinc_reversibil is
+	signal saD, saQ : STD_LOGIC_VECTOR(2 downto 0);
+begin
+	saD <= "000" when iSens='0' and saQ="101" else
+			saQ+1 when iSens='0' else 
+			"101" when iSens='1' and saQ="000" else
+			saQ-1;
+	saQ <= "000" when iClear='1' else
+			saD when rising_edge(iClk);
+	oaQ <= saQ;
+end Behavioral;

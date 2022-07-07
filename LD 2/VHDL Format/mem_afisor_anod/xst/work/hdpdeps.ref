@@ -1,0 +1,7 @@
+V3 3
+FL $XILINX/mem_afisor_anod/mem_afisor_anod.vhd 2019/05/20.14:42:21 J.40
+EN work/mem_afisor_anod 1558352788 FL $XILINX/mem_afisor_anod/mem_afisor_anod.vhd \
+      PB ieee/std_logic_1164 1192821031 PB ieee/std_logic_arith 1192821032 \
+      PB ieee/STD_LOGIC_UNSIGNED 1192821033
+AR work/mem_afisor_anod/Behavioral 1558352789 \
+      FL $XILINX/mem_afisor_anod/mem_afisor_anod.vhd EN work/mem_afisor_anod 1558352788

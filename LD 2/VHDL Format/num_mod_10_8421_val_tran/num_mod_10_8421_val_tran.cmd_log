@@ -1,0 +1,2 @@
+xst -ise "C:/Xilinx92i/num_mod_10_8421_val_tran/num_mod_10_8421_val_tran.ise" -intstyle ise -ifn num_mod_10_8421_val_tran.xst -ofn num_mod_10_8421_val_tran.syr
+xst -ise "C:/Xilinx92i/num_mod_10_8421_val_tran/num_mod_10_8421_val_tran.ise" -intstyle ise -ifn num_mod_10_8421_val_tran.xst -ofn num_mod_10_8421_val_tran.syr

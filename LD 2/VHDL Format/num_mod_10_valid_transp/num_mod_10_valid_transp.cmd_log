@@ -1,0 +1,2 @@
+xst -ise "C:/Xilinx92i/num_mod_10_valid_transp/num_mod_10_valid_transp.ise" -intstyle ise -ifn num_mod_10_valid_transp.xst -ofn num_mod_10_valid_transp.syr
+netgen -ise "C:/Xilinx92i/num_mod_10_valid_transp/num_mod_10_valid_transp.ise" -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim num_mod_10_valid_transp.ngc num_mod_10_valid_transp_synthesis.v

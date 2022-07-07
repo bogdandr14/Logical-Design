@@ -1,0 +1,1 @@
+xst -ise "C:/Xilinx92i/num_mod_6_sinc_reversibil/num_mod_6_sinc_reversibil.ise" -intstyle ise -ifn num_mod_6_sinc_reversibil.xst -ofn num_mod_6_sinc_reversibil.syr

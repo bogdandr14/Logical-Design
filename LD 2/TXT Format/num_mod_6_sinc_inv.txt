@@ -1,0 +1,16 @@
+entity num_mod_6_sinc_inv is
+    Port ( iClk : in  STD_LOGIC;
+           iClear : in  STD_LOGIC;
+           oaQ : out  STD_LOGIC_VECTOR (2 downto 0));
+end num_mod_6_sinc_inv;
+
+architecture Behavioral of num_mod_6_sinc_inv is
+	signal saD, saQ : STD_LOGIC_VECTOR (2 downto 0);
+begin
+	saD <= "101" when saQ = "000" else
+			saQ-1;
+	saQ <= "000" when iClear='1' else
+			saD when rising_edge(iClk);
+	oaQ <= saQ;
+	
+end Behavioral;

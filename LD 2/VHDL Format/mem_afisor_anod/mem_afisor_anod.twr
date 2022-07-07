@@ -1,0 +1,79 @@
+--------------------------------------------------------------------------------
+Release 9.2.04i Trace 
+Copyright (c) 1995-2007 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx92i\bin\nt\trce.exe -ise
+C:/Xilinx92i/mem_afisor_anod/mem_afisor_anod.ise -intstyle ise -e 3 -s 4 -xml
+mem_afisor_anod mem_afisor_anod.ncd -o mem_afisor_anod.twr mem_afisor_anod.pcf
+
+Design file:              mem_afisor_anod.ncd
+Physical constraint file: mem_afisor_anod.pcf
+Device,package,speed:     xa3s50,vqg100,-4 (PRODUCTION 1.39 2007-10-19)
+Report level:             error report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+iaAdresa<0>    |oaData<0>      |    8.102|
+iaAdresa<0>    |oaData<1>      |    7.520|
+iaAdresa<0>    |oaData<2>      |    8.268|
+iaAdresa<0>    |oaData<3>      |    7.487|
+iaAdresa<0>    |oaData<4>      |    8.103|
+iaAdresa<0>    |oaData<5>      |    7.893|
+iaAdresa<0>    |oaData<6>      |    7.607|
+iaAdresa<1>    |oaData<0>      |    8.619|
+iaAdresa<1>    |oaData<1>      |    7.324|
+iaAdresa<1>    |oaData<2>      |    8.448|
+iaAdresa<1>    |oaData<3>      |    7.285|
+iaAdresa<1>    |oaData<4>      |    8.531|
+iaAdresa<1>    |oaData<5>      |    8.067|
+iaAdresa<1>    |oaData<6>      |    8.202|
+iaAdresa<2>    |oaData<0>      |    8.989|
+iaAdresa<2>    |oaData<1>      |    8.008|
+iaAdresa<2>    |oaData<2>      |    9.131|
+iaAdresa<2>    |oaData<3>      |    7.884|
+iaAdresa<2>    |oaData<4>      |    8.816|
+iaAdresa<2>    |oaData<5>      |    8.665|
+iaAdresa<2>    |oaData<6>      |    8.452|
+iaAdresa<3>    |oaData<0>      |    9.083|
+iaAdresa<3>    |oaData<1>      |    7.360|
+iaAdresa<3>    |oaData<2>      |    8.449|
+iaAdresa<3>    |oaData<3>      |    7.251|
+iaAdresa<3>    |oaData<4>      |    8.294|
+iaAdresa<3>    |oaData<5>      |    7.998|
+iaAdresa<3>    |oaData<6>      |    8.467|
+---------------+---------------+---------+
+
+
+Analysis completed Mon May 20 14:45:36 2019 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 115 MB
+
+
+

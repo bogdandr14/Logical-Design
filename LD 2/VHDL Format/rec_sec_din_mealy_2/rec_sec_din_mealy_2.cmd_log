@@ -1,0 +1,1 @@
+xst -ise "E:/Facultate/1.2/Proiectare Logica/Lab/rec_sec_din_mealy)/rec_sec_din_mealy_2/rec_sec_din_mealy_2.ise" -intstyle ise -ifn rec_sec_din_mealy_2.xst -ofn rec_sec_din_mealy_2.syr

@@ -1,0 +1,1 @@
+xst -ise "C:/Xilinx92i/num_john_8_biti/num_john_8_biti.ise" -intstyle ise -ifn num_john_8_biti.xst -ofn num_john_8_biti.syr

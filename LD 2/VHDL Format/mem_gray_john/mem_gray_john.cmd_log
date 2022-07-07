@@ -1,0 +1,2 @@
+xst -ise "C:/Xilinx92i/mem_gray_john/mem_gray_john.ise" -intstyle ise -ifn mem_gray_john.xst -ofn mem_gray_john.syr
+xst -ise "C:/Xilinx92i/mem_gray_john/mem_gray_john.ise" -intstyle ise -ifn mem_gray_john.xst -ofn mem_gray_john.syr

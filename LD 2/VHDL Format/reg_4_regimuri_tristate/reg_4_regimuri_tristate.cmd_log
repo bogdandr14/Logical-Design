@@ -1,0 +1,1 @@
+xst -ise "C:/Xilinx92i/reg_4_regimuri_tristate/reg_4_regimuri_tristate.ise" -intstyle ise -ifn reg_4_regimuri_tristate.xst -ofn reg_4_regimuri_tristate.syr

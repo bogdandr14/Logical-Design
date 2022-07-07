@@ -1,0 +1,47 @@
+----------------------------------------------------------------------------------
+-- Company: 
+-- Engineer: 
+-- 
+-- Create Date:    17:07:53 05/22/2019 
+-- Design Name: 
+-- Module Name:    bilet_8 - Behavioral 
+-- Project Name: 
+-- Target Devices: 
+-- Tool versions: 
+-- Description: 
+--
+-- Dependencies: 
+--
+-- Revision: 
+-- Revision 0.01 - File Created
+-- Additional Comments: 
+--
+----------------------------------------------------------------------------------
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+---- Uncomment the following library declaration if instantiating
+---- any Xilinx primitives in this code.
+--library UNISIM;
+--use UNISIM.VComponents.all;
+
+entity bilet_8 is
+    Port ( iClk : in  STD_LOGIC;
+           iClear : in  STD_LOGIC;
+           oaQ : out  STD_LOGIC_VECTOR (3 downto 0);
+			  oLast: out STD_LOGIC);
+end bilet_8;
+
+architecture Behavioral of bilet_8 is
+	signal saD, saQ: STD_LOGIC_VECTOR (3 downto 0);
+begin
+	saD <= saQ+1;
+	saQ <= "0000" when iClear='1' else
+				saD when rising_edge(iClk);
+	oaQ <= saQ;
+	oLast <= '1' when saQ(3)='1' else
+				'0';
+end Behavioral;
+

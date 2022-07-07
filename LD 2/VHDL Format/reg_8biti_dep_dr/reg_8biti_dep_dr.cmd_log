@@ -1,0 +1,1 @@
+xst -ise "C:/Xilinx92i/reg_8biti_dep_dr/reg_8biti_dep_dr.ise" -intstyle ise -ifn reg_8biti_dep_dr.xst -ofn reg_8biti_dep_dr.syr

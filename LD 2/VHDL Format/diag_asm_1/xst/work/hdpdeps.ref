@@ -1,0 +1,9 @@
+V3 3
+FL "E:/Facultate/1.2/Proiectare Logica/Lab/rec_sec_din_mealy)/diag_asm/diag_asm_1/diag_asm_1.vhd" 2019/05/21.20:06:36 J.40
+EN work/diag_asm_1 1558458411 \
+      FL "E:/Facultate/1.2/Proiectare Logica/Lab/rec_sec_din_mealy)/diag_asm/diag_asm_1/diag_asm_1.vhd" \
+      PB ieee/std_logic_1164 1192821031 PB ieee/std_logic_arith 1192821032 \
+      PB ieee/STD_LOGIC_UNSIGNED 1192821033
+AR work/diag_asm_1/Behavioral 1558458412 \
+      FL "E:/Facultate/1.2/Proiectare Logica/Lab/rec_sec_din_mealy)/diag_asm/diag_asm_1/diag_asm_1.vhd" \
+      EN work/diag_asm_1 1558458411

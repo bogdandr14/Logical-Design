@@ -1,0 +1,20 @@
+entity bilet_20 is
+    Port ( iClk : in  STD_LOGIC;
+           iC1 : in  STD_LOGIC;
+           iC0 : in  STD_LOGIC;
+           iaData : in  STD_LOGIC_VECTOR (7 downto 0);
+           oaQ : out  STD_LOGIC_VECTOR (7 downto 0));
+end bilet_20;
+
+architecture Behavioral of bilet_20 is
+	signal saD, saQ : STD_LOGIC_VECTOR(7 downto 0);
+begin
+	saD <= x"00" when iC0='0' and iC1='0' else
+			saQ(0)&saQ(7 downto 1) when iC0='0' and iC1='1' else
+			saQ(6 downto 0)&saQ(7) when iC0='1' and iC1='0' else
+			iaData;
+	saQ <= saD when rising_edge(iClk);
+	oaQ <= saQ;
+			
+
+end Behavioral;

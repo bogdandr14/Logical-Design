@@ -1,0 +1,1 @@
+xst -ise "E:/Facultate/1.2/Proiectare Logica/Lab/rec_sec_din_mealy)/RSD_neg_moore/RSD_neg_moore.ise" -intstyle ise -ifn RSD_neg_moore.xst -ofn RSD_neg_moore.syr

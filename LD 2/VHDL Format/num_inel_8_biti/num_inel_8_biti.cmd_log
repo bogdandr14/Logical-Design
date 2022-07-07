@@ -1,0 +1,2 @@
+xst -ise "C:/Xilinx92i/num_inel_8_biti/num_inel_8_biti.ise" -intstyle ise -ifn num_inel_8_biti.xst -ofn num_inel_8_biti.syr
+netgen -ise "C:/Xilinx92i/num_inel_8_biti/num_inel_8_biti.ise" -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim num_inel_8_biti.ngc num_inel_8_biti_synthesis.v

@@ -1,0 +1,1 @@
+xst -ise "E:/Facultate/1.2/Proiectare Logica/Lab/div_frec_mod_10_ump_20/div_frec_mod_10_ump_20.ise" -intstyle ise -ifn div_frec_mod_10_ump_20.xst -ofn div_frec_mod_10_ump_20.syr

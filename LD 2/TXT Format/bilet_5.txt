@@ -1,0 +1,18 @@
+entity bilet_5 is
+    Port ( iClk : in  STD_LOGIC;
+           iClear : in  STD_LOGIC;
+           oaQ : out  STD_LOGIC_VECTOR (3 downto 0);
+           oCY : out  STD_LOGIC);
+end bilet_5;
+
+architecture Behavioral of bilet_5 is
+	signal saD, saQ: STD_LOGIC_VECTOR(3 downto 0);
+begin
+	saD <= saQ+1;
+	saQ <= "0000" when iClear='1' else
+			saD when rising_edge(iClk);
+	oaQ <= saQ;
+	oCY <= '1' when saQ="1000" else
+				'0';
+
+end Behavioral;

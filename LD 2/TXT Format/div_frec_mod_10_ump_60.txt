@@ -1,0 +1,19 @@
+entity div_frec_mod_10_ump_60 is
+    Port ( iClk : in  STD_LOGIC;
+           iReset : in  STD_LOGIC;
+           oQ : out  STD_LOGIC);
+end div_frec_mod_10_ump_60;
+
+architecture Behavioral of div_frec_mod_10_ump_60 is
+
+signal saD, saQ: STD_LOGIC_VECTOR(3 downto 0);
+begin
+	saD <= "0000" when saQ="1001" else
+			saQ+1;
+	saQ <= "0000" when iReset='1' else
+			saD when rising_edge(iClk);
+	oQ <= '1' when saQ(1)='0' else 
+			'0';
+
+
+end Behavioral;

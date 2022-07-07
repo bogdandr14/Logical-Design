@@ -1,0 +1,1 @@
+xst -ise "C:/Xilinx92i/reg_tamp_tristate/reg_tamp_tristate.ise" -intstyle ise -ifn reg_tamp_tristate.xst -ofn reg_tamp_tristate.syr

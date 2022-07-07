@@ -1,0 +1,2 @@
+xst -ise "E:/Facultate/1.2/Proiectare Logica/Lab/div_frec_mod_10_ump_40/div_frec_mod_10_ump_40.ise" -intstyle ise -ifn div_frec_mod_10_ump_40.xst -ofn div_frec_mod_10_ump_40.syr
+netgen -ise "E:/Facultate/1.2/Proiectare Logica/Lab/div_frec_mod_10_ump_40/div_frec_mod_10_ump_40.ise" -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim div_frec_mod_10_ump_40.ngc div_frec_mod_10_ump_40_synthesis.v

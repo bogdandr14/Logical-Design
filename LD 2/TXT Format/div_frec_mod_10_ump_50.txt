@@ -1,0 +1,16 @@
+entity div_frec_mod_10_ump_50 is
+    Port ( iClk : in  STD_LOGIC;
+           iReset : in  STD_LOGIC;
+           oQ : out  STD_LOGIC);
+end div_frec_mod_10_ump_50;
+
+architecture Behavioral of div_frec_mod_10_ump_50 is
+	signal saStarePrezenta, saStareUrmatoare: STD_LOGIC_VECTOR(4 downto 0);
+begin
+	saStarePrezenta <= saStareUrmatoare(3 downto 0)&(not saStareUrmatoare(4));
+	saStareUrmatoare <= "00000" when iReset='1' else
+								saStarePrezenta when rising_edge(iClk);
+	oQ <= saStarePrezenta(4);
+
+end Behavioral;
+

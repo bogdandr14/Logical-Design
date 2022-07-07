@@ -1,0 +1,9 @@
+V3 3
+FL "E:/Facultate/1.2/Proiectare Logica/Lab/bilet_5/bilet_5.vhd" 2019/05/22.20:43:36 J.40
+EN work/bilet_5 1558547019 \
+      FL "E:/Facultate/1.2/Proiectare Logica/Lab/bilet_5/bilet_5.vhd" \
+      PB ieee/std_logic_1164 1192821031 PB ieee/std_logic_arith 1192821032 \
+      PB ieee/STD_LOGIC_UNSIGNED 1192821033
+AR work/bilet_5/Behavioral 1558547020 \
+      FL "E:/Facultate/1.2/Proiectare Logica/Lab/bilet_5/bilet_5.vhd" \
+      EN work/bilet_5 1558547019

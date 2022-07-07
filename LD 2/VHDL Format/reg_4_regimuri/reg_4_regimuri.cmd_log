@@ -1,0 +1,1 @@
+xst -ise "C:/Xilinx92i/reg_4_regimuri/reg_4_regimuri.ise" -intstyle ise -ifn reg_4_regimuri.xst -ofn reg_4_regimuri.syr

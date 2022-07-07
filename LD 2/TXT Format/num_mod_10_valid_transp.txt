@@ -1,0 +1,20 @@
+entity num_mod_10_valid_transp is
+    Port ( iClk : in  STD_LOGIC;
+           iE : in  STD_LOGIC;
+           iClear : in  STD_LOGIC;
+           oaQ : out  STD_LOGIC_VECTOR (3 downto 0);
+           oCY : out  STD_LOGIC);
+end num_mod_10_valid_transp;
+
+architecture Behavioral of num_mod_10_valid_transp is
+	signal saD, saQ: STD_LOGIC_VECTOR(3 downto 0);
+begin
+	saD <= saQ when iE='0' else
+			"0000" when saQ="1001" else
+			saQ+1;
+	saQ <= "0000" when iClear='1' else
+			saD when rising_edge(iClk);
+	oCY <='1' when saQ = "1001" else '0';
+	oaQ <= saQ;
+
+end Behavioral;

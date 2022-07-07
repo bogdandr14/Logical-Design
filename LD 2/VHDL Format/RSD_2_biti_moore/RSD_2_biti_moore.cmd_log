@@ -1,0 +1,1 @@
+xst -ise "E:/Facultate/1.2/Proiectare Logica/Lab/rec_sec_din_mealy)/RSD_2_biti_moore/RSD_2_biti_moore.ise" -intstyle ise -ifn RSD_2_biti_moore.xst -ofn RSD_2_biti_moore.syr

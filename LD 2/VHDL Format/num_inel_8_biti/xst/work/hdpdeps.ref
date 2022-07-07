@@ -1,0 +1,7 @@
+V3 3
+FL $XILINX/num_inel_8_biti/num_inel_8_biti.vhd 2019/05/20.19:48:01 J.40
+EN work/num_inel_8_biti 1558370886 FL $XILINX/num_inel_8_biti/num_inel_8_biti.vhd \
+      PB ieee/std_logic_1164 1192821031 PB ieee/std_logic_arith 1192821032 \
+      PB ieee/STD_LOGIC_UNSIGNED 1192821033
+AR work/num_inel_8_biti/Behavioral 1558370887 \
+      FL $XILINX/num_inel_8_biti/num_inel_8_biti.vhd EN work/num_inel_8_biti 1558370886

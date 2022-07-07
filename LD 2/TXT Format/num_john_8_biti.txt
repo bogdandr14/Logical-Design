@@ -1,0 +1,15 @@
+entity num_john_8_biti is
+    Port ( iClk : in  STD_LOGIC;
+           iClear : in  STD_LOGIC;
+           oaQ : out  STD_LOGIC_VECTOR (7 downto 0));
+end num_john_8_biti;
+
+architecture Behavioral of num_john_8_biti is
+	signal saD, saQ : STD_LOGIC_VECTOR(7 downto 0);
+begin
+	saD <= saQ(6 downto 0)&(not saQ(7));
+	saQ <= X"00" when iClear='1' else
+			saD when rising_edge(iClk);
+	oaQ <= saQ;
+
+end Behavioral;

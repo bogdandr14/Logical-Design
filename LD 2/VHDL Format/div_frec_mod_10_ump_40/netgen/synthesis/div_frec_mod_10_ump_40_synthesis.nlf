@@ -1,0 +1,21 @@
+Release 9.2.04i - netgen J.40
+Copyright (c) 1995-2007 Xilinx, Inc.  All rights reserved.
+
+Command Line: netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis
+-ofmt verilog -sim div_frec_mod_10_ump_40.ngc div_frec_mod_10_ump_40_synthesis.v
+ 
+
+Reading design 'div_frec_mod_10_ump_40.ngc' ...
+Flattening design ...
+Processing design ... 
+  Preping design's networks ...
+  Preping design's macros ...
+Writing Verilog netlist file 'E:\Facultate\1.2\Proiectare
+Logica\Lab\div_frec_mod_10_ump_40\netgen\synthesis\div_frec_mod_10_ump_40_synthe
+sis.v' ...
+INFO:NetListWriters:633 - The generated Verilog netlist contains Xilinx UNISIM
+   simulation primitives and has to be used with UNISIM simulation library for
+   correct compilation and simulation. 
+Number of warnings: 0
+Number of info messages: 1
+Total memory usage is 96488 kilobytes
